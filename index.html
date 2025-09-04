@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="YT_main.css" />
+    <link rel="shortcut icon" href="logo.svg">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap">
+    <script src="https://kit.fontawesome.com/581b569217.js"></script>
+</head>
+
+<body class="dark-mode">
+    <header>
+        <div id="headerMain">
+            <div id="style">
+                <button class="filter-options active-bnt">All</button>
+                <button class="filter-options">Codeing</button>
+                <button class="filter-options">Gameing</button>
+                <button class="filter-options">Singing</button>
+                <button class="filter-options">Crafting</button>
+                <button class="filter-options">Films</button>
+                <button class="filter-options">Sport</button>
+                <button class="filter-options">Shopping</button>
+                <button class="filter-options">beauty</button>
+                <button class="filter-options">Fashion</button>
+                <button class="filter-options">education</button>
+                <button class="filter-options">entertinment</button>
+                <button class="filter-options">News</button>
+            </div>
+            <button type="button" id="options" onclick="optionMain()">
+                <i class="fa-solid fa-bars logos-dark"></i>
+            </button>
+            <a href="sendan.html"><img src="logo.svg" id="yt-logo"></a>
+            <p id="title">YouTube</p>
+            <div id="search-container">
+                <input type="search" id="searchBar" placeholder="Search">
+                <button id="search" title="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <button type="button" id="voice">
+                <i class="fa-solid fa-microphone"></i>
+            </button>
+            <button type="button" id="create">
+                <i class="fa-solid fa-plus"></i> Create</button>
+            <button type="button" id="notification">
+                <i class="fa-regular fa-bell"></i>
+            </button>
+            <button id="user-button" type="button">
+                <i class="fa-regular fa-circle-user logos-dark"></i>
+            </button>
+        </div>
+        <div id="popup" class="popup">
+            <div id="popupContent">
+                <div id="userProfile">
+                    <i class="fa-regular fa-circle-user logos-dark profileIcon"></i>
+                    <p id="yourName">yourName</p>
+                    <p id="email">@xxx</p>
+                </div>
+                <hr>
+                <ul>
+                    <li><i class="fa-brands fa-google"></i> Google Account</li>
+                    <li><i class="fa-solid fa-right-left"></i> Switch Account</li>
+                    <li><i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li id="appearanceButton"><i class="fa-regular fa-moon fa-rotate-by"
+                            style="--fa-rotate-angle: 195deg;"></i>
+                        Appearance</li>
+
+                    <li><i class="fa-solid fa-language"></i> Language: English</li>
+                    <li><i class="fa-solid fa-map-marker-alt"></i> Location: India</li>
+                    <li><i class="fa-regular fa-keyboard"></i> Keyboard Shortcuts</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="appearancePopupContent" class="appearance-popup">
+            <h4>Appearance</h4>
+            <p>Setting applies to this browser only</p>
+            <hr>
+            <ul>
+                <li id="darkTheme" class="active" onclick="Dark()">Dark theme</li>
+                <li id="lightTheme" onclick="Light()">Light theme</li>
+            </ul>
+        </div>
+
+
+    </header>
+    <aside>
+        <div id="optionsTab">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house active nav"></i> Home</li></a>
+                <li><a href="#"><i class="fa-solid fa-video nav"></i> Shorts</li></a>
+                <li><a href="#"><i class="fa-brands fa-square-youtube nav"></i> Subscriptions</li></a>
+            </ul>
+            <hr>
+
+
+
+            <ul>
+                <li><a href="#">
+                        <h3 class="you-h3">You<i class="fa-solid fa-right-long you"></i></h3>
+                    </a></li>
+                <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i> History</a></li>
+                <li><a href="#"><i class="fa-solid fa-bars"></i> Playlist</a></li>
+                <li><a href="#"><i class="fas fa-video"></i> Your Videos</a></li>
+                <li><a href="#"><i class="fas fa-clock"></i> Watch Later</a></li>
+                <li><a href="#"><i class="fas fa-thumbs-up"></i> Liked Videos</a></li>
+            </ul>
+            <hr />
+            <!-- 
+            <h3>Subscriptions</h3>
+            <ul>
+                <li><a href="#"><img src="https://via.placeholder.com/24" alt=""> Tamil Tech - MrTT</a></li>
+                <li><a href="#"><img src="https://via.placeholder.com/24" alt=""> Mud Flaps</a></li>
+                <li><a href="#"><img src="https://via.placeholder.com/24" alt=""> Manguni Gamer</a></li>
+                <li><a href="#"><img src="https://via.placeholder.com/24" alt=""> MOB GAMING</a></li>
+                <li><a href="#"><img src="https://via.placeholder.com/24" alt=""> ShaZ University</a></li>
+                <li><a href="#"><img src="https://via.placeholder.com/24" alt=""> A J Bhairav</a></li>
+                <li><a href="#"><img src="https://via.placeholder.com/24" alt=""> A2D PC FACTORY</a></li>
+                <li><a href="#"><i class="fas fa-chevron-down"></i> Show more</a></li>
+            </ul>
+
+            <hr /> -->
+
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="#"><i class="fas fa-fire"></i> Trending</a></li>
+                <li><a href="#"><i class="fas fa-shopping-bag"></i> Shopping</a></li>
+                <li><a href="#"><i class="fas fa-music"></i> Music</a></li>
+                <li><a href="#"><i class="fas fa-film"></i> Films</a></li>
+                <li><a href="#"><i class="fas fa-gamepad"></i> Gaming</a></li>
+                <li><a href="#"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="#"><i class="fas fa-trophy"></i> Sport</a></li>
+                <li><a href="#"><i class="fas fa-graduation-cap"></i> Courses</a></li>
+                <li><a href="#"><i class="fas fa-shirt"></i> Fashion & beauty</a></li>
+                <li><a href="#"><i class="fas fa-podcast"></i> Podcasts</a></li>
+            </ul>
+
+            <hr />
+
+            <h3>More from YouTube</h3>
+            <ul>
+                <li><a href="#"><i class="fab fa-youtube red-icon"></i> YouTube Premium</a></li>
+                <li><a href="#"><i class="fas fa-gear red-icon"></i> YouTube Studio</a></li>
+                <li><a href="#"><i class="fas fa-circle-play red-icon"></i> YouTube Music</a></li>
+                <li><a href="#"><i class="fas fa-child red-icon"></i> YouTube Kids</a></li>
+            </ul>
+
+            <hr />
+
+            <ul>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="#"><i class="fas fa-flag"></i> Report history</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-question"></i> Help</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-exclamation"></i></a></li>
+            </ul>
+        </div>
+        <div id="default">
+            <div id="homeMain">
+                <button type="button" id="home">
+                    <i class="fa-solid fa-house logos-dark logo"></i>
+                    <p>Home</p>
+                </button>
+            </div>
+            <div id="shortsMain">
+                <button type="button" id="shorts">
+                    <i class="fa-solid fa-video"></i>
+                    <p>Shorts</p>
+                </button>
+            </div>
+            <div id="subsMain">
+                <button type="button" id="subs"><i class="fa-brands fa-square-youtube"></i>
+                    <p>Subscriptions</p>
+                </button>
+            </div>
+            <div id="youMain">
+                <button type="button" id="you"><i class="fa-regular fa-circle-user"></i>
+                    <p>You</p>
+                </button>
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+    </aside>
+
+    <main>
+
+        <div class="video-container">
+            <!-- <div class="video">
+                <img src="bg.jpg" alt="" class="thumbnail">
+                <div class="content">
+                    <img src="bg.jpg" alt="" class="channel-icon">
+                    <div class="info">
+                        <h4 class="title">aspergeloses | coloud djjdh dj keygen</h4>
+                        <p class="channel-name">BSS</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </main>
+    <script src="YT_main.js"></script>
+
+</body>
+
+</html>
